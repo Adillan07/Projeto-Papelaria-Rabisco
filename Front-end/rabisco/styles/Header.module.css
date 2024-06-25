@@ -1,0 +1,24 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 1em 2em;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20vw;
+}
+.nav a{
+  text-decoration: none;
+  margin-right: 1em;
+}
+.nav a:hover{
+  text-decoration: underline;
+}
+.img{
+  width: 40px;
+  height: auto;
+}
