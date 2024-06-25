@@ -1,64 +1,91 @@
-**Projeto Papelaria Rabisco**
-Olá! Seja bem-vindo ao projeto Papelaria Rabisco, desenvolvido por Ádillan Wasilewski Soares como parte dos estudos na Escola SENAI Luiz Pagliato. Este projeto consiste em uma aplicação web completa, envolvendo tanto o backend quanto o frontend, utilizando tecnologias como Flask para o backend em Python e React para o frontend em JavaScript.
+# Papelaria Rabisco
 
-**Descrição**
-A Papelaria Rabisco é uma aplicação fictícia que simula um sistema de gestão de produtos e funcionários para uma papelaria. O projeto inclui funcionalidades como cadastro, listagem, edição e exclusão de produtos, além da exibição dos detalhes de cada produto. Também é possível visualizar e navegar pela lista de funcionários da papelaria.
+## Descrição
 
-**Tecnologias Utilizadas**
-Backend:
-Flask
-MySQL (banco de dados)
-Frontend:
-React
-Bootstrap (para estilização)
-Outras Tecnologias:
-Axios (para requisições HTTP no frontend)
-Next.js (framework React para renderização no lado do servidor)
-**Funcionalidades Implementadas**
-Backend (Flask):
+Este é um projeto de um site para a Papelaria Rabisco. O site foi desenvolvido utilizando React e Next.js para o frontend e Flask para o backend. Ele permite visualizar produtos disponíveis, detalhes de cada produto e informações sobre os funcionários.
 
-Cadastro de produtos
-Listagem de produtos
-Edição de produtos
-Exclusão de produtos
-Consulta detalhada de produtos
-Listagem de funcionários (integrado com API externa)
-Frontend (React):
+## Funcionalidades
 
-Página inicial com carrossel de destaques
-Página de listagem de produtos
-Página de detalhes do produto
-Página de listagem de funcionários
-Componentes reutilizáveis como cards de produtos e funcionários
-**Estrutura do Projeto**
-Backend:
-Arquivos de configuração do Flask
-Rotas para cada funcionalidade (produtos e funcionários)
-Conexão com o banco de dados MySQL
-Tratamento de erros e respostas JSON
-Frontend:
-Componentes React para cada página e funcionalidade
-Estilização com Bootstrap e CSS customizado
-Requisições HTTP usando Axios para consumir a API Flask
-Roteamento usando Next.js para renderização no servidor
-**Como Executar o Projeto**
-Backend (Flask):
+1. **Página Inicial**:
+   - Apresenta um carrossel de imagens promocionais.
+   - Inclui um título de boas-vindas.
 
-Certifique-se de ter o Python e o MySQL instalados
-Instale as dependências do Python (pip install flask flask-cors mysql-connector-python)
-Execute o arquivo app.py para iniciar o servidor Flask (python app.py)
-Frontend (React):
+2. **Página de Produtos**:
+   - Lista todos os produtos disponíveis.
+   - Permite acessar detalhes de cada produto.
 
-Certifique-se de ter o Node.js e o npm instalados
-Navegue até a pasta do projeto frontend (cd frontend)
-Instale as dependências do npm (npm install)
-Inicie o servidor de desenvolvimento (npm run dev)
-**Contato**
-Para mais informações ou sugestões, entre em contato com Ádillan Wasilewski Soares via email (adillanwasilewski@email.com).
+3. **Página de Contatos**:
+   - Lista informações sobre os funcionários.
 
-Este projeto foi desenvolvido como parte do aprendizado na Escola SENAI Luiz Pagliato. Obrigado por conferir!
+4. **Página de Detalhes do Produto**:
+   - Exibe informações detalhadas de um produto específico, como nome, descrição, preço e quantidade em estoque.
 
+## Estrutura do Projeto
 
+### Backend (Flask)
+
+- **`app.py`**: Arquivo principal do Flask que contém as rotas para manipulação dos produtos.
+
+### Frontend (React e Next.js)
+
+#### Serviços
+
+- **`api.js`**: Arquivo de serviços para conectar com a API em Flask.
+- **`apiEmployees.js`**: Arquivo de serviços para conectar com a API de funcionários do site Reqres.
+
+#### Componentes
+
+- **`H1.jsx`**: Componente para títulos.
+- **`HeaderB.jsx`**: Componente do cabeçalho do site.
+- **`Carrossel.jsx`**: Componente de carrossel de imagens.
+- **`CardProdut.jsx`**: Componente para exibir informações dos produtos.
+- **`CardEmployees.jsx`**: Componente para exibir informações dos funcionários.
+- **`CardList.jsx`**: Componente para listar todos os produtos.
+- **`CardListEmployees.jsx`**: Componente para listar todos os funcionários.
+
+#### Páginas
+
+- **`index.jsx`**: Página inicial.
+- **`produtos.jsx`**: Página de produtos.
+- **`contatos.jsx`**: Página de contatos.
+- **`detalhes.jsx`**: Página de detalhes de um produto específico.
+
+## Instalação e Execução
+
+### Backend
+
+1. Certifique-se de ter o Python instalado.
+2. Crie e ative um ambiente virtual:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # No Windows use `venv\Scripts\activate`
+3. Instale as dependências:
+   ```bash
+   pip install flask flask-cors
+4. Execute a aplicação:
+   ```bash
+   python app.py
+
+### Frontend
+
+1. Certifique-se de ter o Node.js e npm instalados.
+2. Instale as dependências do projeto:
+   ```bash
+   npm install
+3. Execute a aplicação:
+   ```bash
+   npm run dev
+
+## Tecnologias Utilizadas
+
+- **Frontend:**
+  - React
+  - Next.js
+  - Bootstrap
+  - Axios
+- **Backend:**
+  - Flask
+  - Flask-CORS  
 
 
 
