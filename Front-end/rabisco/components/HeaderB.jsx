@@ -5,11 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 export default function HeaderB(){
     const router = useRouter()
     return(
-    /*
-    <header className={styles.header}>
-    <nav className={styles.nav}>
-    <Link href="/" className={styles.a}>
-    */
       <header className="w-100">
           <nav className="navbar navbar-expand-lg bg-dark bg-gradient shadow border-bottom border-4 border-dark border-opacity-25 px-5">
               <div className="container-fluid">

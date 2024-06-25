@@ -1,11 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 export default function Carrossel(){
     return(
-    /*
-    <header className={styles.header}>
-    <nav className={styles.nav}>
-    <Link href="/" className={styles.a}>
-    */
    <div className="container-fluid">
     <div id="carouselExampleIndicators" className="carousel slide">
         <div className="carousel-indicators">
